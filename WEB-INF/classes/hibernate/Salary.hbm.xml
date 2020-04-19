@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean">
+<class name="Salary" table="salary_detail">
+<id name="salaryid">
+<generator class="increment" />
+</id>
+<property name="eid" column="emp_id" ></property>
+<property name="ename" ></property>
+<property name="mobile"  ></property>
+<property name="doj"  ></property>
+<property name="designation"  ></property>
+<property name="joblocation"  ></property>
+<property name="wdays"></property>
+<property name="daypay"></property>
+
+
+<property name="month"></property>
+
+<property name="salary"></property>
+<property name="bonus"></property>
+<property name="allowance"></property>
+<property name="pfund"></property>
+<property name="tax"></property>
+
+<property name="earnings"></property>
+<property name="deduction"></property>
+
+<property name="netpay"></property>
+
+</class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean">
+<class name="Employee" table="employee_detail">
+<id name="eid">
+<generator class="increment" />
+</id>
+<property name="ename" ></property>
+<property name="fname" column="father_name"></property>
+<property name="dob"  ></property>
+<property name="gender"  ></property>
+<property name="mobile"  ></property>
+<property name="email"  ></property>
+<property name="address"  ></property>
+<property name="doj"  ></property>
+<property name="designation"  ></property>
+<property name="qualification"  ></property>
+<property name="joblocation"  ></property>
+<property name="salary"></property>
+
+</class>
+</hibernate-mapping>
