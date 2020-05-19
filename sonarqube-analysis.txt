@@ -5,13 +5,13 @@ node{
    stage('Compile-Package'){
       // Get maven home path
       def Maven_Home =  tool name: 'maven-3.6.3', type: 'maven'   
-      sh "${Maven_Home}apache-maven-3.6.3"
+      sh "${Maven_Home}/bin/mvn package"
    }
    
    stage('SonarQube Analysis') {
         def MAVEN_Home =  tool name: 'maven-3.6.3', type: 'maven'
         withSonarQubeEnv('sonar_server') { 
-          sh "${Maven_Home}apache-maven-3.6.3 sonar:sonar"
+          sh "${Maven_Home}/bin/mvn package sonar:sonar"
         }
     }
    }
