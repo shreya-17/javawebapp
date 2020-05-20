@@ -1,7 +1,7 @@
 node{
   stage ('Build') {
 
-    git url: 'https://github.com/shreya-17/Pixlmarketo'
+    git url: 'https://github.com/shreya-17/Pixlmarketo.git'
 
     withMaven(
         // Maven installation declared in the Jenkins "Global Tool Configuration"
