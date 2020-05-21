@@ -10,9 +10,9 @@ node {
       {
 
       // Run the maven build
-     mvn sonar:sonar \
-  -Dsonar.projectKey=pixel_17 \
-  -Dsonar.host.url=http://localhost:9000 \
+     mvn sonar:sonar 
+  -Dsonar.projectKey=pixel_17 
+  -Dsonar.host.url=http://localhost:9000 
   -Dsonar.login=03d5dc80a0b0debe3bef098cd863902da25e86ce
       } 
   }
