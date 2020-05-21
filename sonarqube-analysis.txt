@@ -11,6 +11,7 @@ node {
 
       // Run the maven build
      mvn sonar:sonar 
+     bat label: '', script: ''
   
       } 
   }
