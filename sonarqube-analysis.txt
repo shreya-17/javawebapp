@@ -4,14 +4,13 @@ node {
     git url: 'https://github.com/shreya-17/Pixlmarketo.git'
 
     node {
-      bat "mvn clean install"
+       "mvn clean install"
          }
         maven: 'maven-3'
       {
 
       // Run the maven build
      mvn sonar:sonar 
-     bat label: '', script: ''
   
       } 
   }
